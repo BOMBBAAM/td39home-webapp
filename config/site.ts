@@ -18,8 +18,8 @@ export const siteConfig = {
   // ── Stats ─────────────────────────────────────
   stats: [
     { value: "200+", label: "โปรเจกต์ที่ผ่านมา", color: "green" as const },
-    { value: "10+",  label: "ปีประสบการณ์",      color: "orange" as const },
-    { value: "98%",  label: "ลูกค้าพึงพอใจ",      color: "blue" as const },
+    { value: "10+", label: "ปีประสบการณ์", color: "orange" as const },
+    { value: "98%", label: "ลูกค้าพึงพอใจ", color: "blue" as const },
   ],
 
   // ── Portfolio images ──────────────────────────
@@ -29,15 +29,15 @@ export const siteConfig = {
 
     // Carousel — ตัวอย่างบ้าน 1, 2, 3 ...
     house: [
-      { src: "/images/build-after.jpg", alt: "ตัวอย่างบ้าน 1" },
-      { src: "", alt: "ตัวอย่างบ้าน 2" },
-      { src: "", alt: "ตัวอย่างบ้าน 3" },
+      { src: "/images/ex-1.jpg", alt: "ตัวอย่างบ้าน 1" },
+      { src: "/images/ex-2.jpg", alt: "ตัวอย่างบ้าน 2" },
+      { src: "/images/ex-3.jpg", alt: "ตัวอย่างบ้าน 3" },
     ],
 
     // Before & After side by side
     renovate: {
       before: { src: "/images/reno-before.jpg", alt: "รีโนเวท — Before" },
-      after:  { src: "/images/reno-after.jpg",  alt: "รีโนเวท — After" },
+      after: { src: "/images/reno-after.jpg", alt: "รีโนเวท — After" },
     },
 
     // Full-width single image
@@ -45,9 +45,9 @@ export const siteConfig = {
 
     // Carousel — ออกแบบ 3D
     design3d: [
-      { src: "/images/3d-home.jpg", alt: "ออกแบบ 3D — 1" },
-      { src: "", alt: "ออกแบบ 3D — 2" },
-      { src: "", alt: "ออกแบบ 3D — 3" },
+      { src: "/images/3d-home-1.jpg", alt: "ออกแบบ 3D — 1" },
+      { src: "/images/3d-home-2.jpg", alt: "ออกแบบ 3D — 2" },
+      { src: "/images/3d-home-3.jpg", alt: "ออกแบบ 3D — 3" },
     ],
   },
 };
