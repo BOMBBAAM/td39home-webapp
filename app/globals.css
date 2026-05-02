@@ -1,26 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #FAFAF8;
+  --bg-card: #FFFFFF;
+  --bg-section: #F4F3EF;
+  --text-primary: #1A1916;
+  --text-secondary: #5C5A54;
+  --text-muted: #9A9690;
+  --accent-green: #3B7D4E;
+  --accent-green-light: #EBF4EE;
+  --accent-orange: #E07B3A;
+  --accent-orange-light: #FDF0E8;
+  --accent-blue: #3A6FBD;
+  --accent-blue-light: #EBF1FB;
+  --border: #E5E3DC;
+  --border-dark: #C8C5BB;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'IBM Plex Sans Thai', 'IBM Plex Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  font-size: 17px;
 }
+
+/* ── Hover helpers ──────────────────────────────── */
+.hover-border:hover {
+  border-color: var(--border-dark);
+}
+
+.hover-card:hover {
+  border-color: var(--border-dark);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: var(--text-primary); }
+
+.btn-primary:hover  { opacity: 0.85; }
+.btn-outline:hover  { border-color: var(--text-secondary); }
+.btn-line:hover     { opacity: 0.9; }
+.btn-call:hover     { background: rgba(255,255,255,0.15); }
+.nav-cta:hover      { opacity: 0.85; }
+
+/* ── Animations ─────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.anim-1 { animation: fadeUp 0.4s ease 0.1s both; }
+.anim-2 { animation: fadeUp 0.4s ease 0.2s both; }
+.anim-3 { animation: fadeUp 0.4s ease 0.3s both; }
+.anim-4 { animation: fadeUp 0.4s ease 0.4s both; }
+.anim-5 { animation: fadeUp 0.4s ease 0.5s both; }
