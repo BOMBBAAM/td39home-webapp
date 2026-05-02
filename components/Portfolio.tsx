@@ -87,7 +87,7 @@ export default function Portfolio() {
       <div style={{ padding: "0 4rem", marginBottom: "1.5rem" }}>
         <SectionLabel text="ตรวจบ้าน / คอนโด" />
         <div style={{
-          width: "100%", aspectRatio: "21/9", position: "relative", borderRadius: 12, overflow: "hidden",
+          width: "100%", aspectRatio: "21/6", position: "relative", borderRadius: 12, overflow: "hidden",
           background: "var(--bg-section)", border: "1px solid var(--border)",
           display: "flex", alignItems: "center", justifyContent: "center",
         }}>

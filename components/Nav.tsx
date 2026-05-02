@@ -5,7 +5,7 @@ export default function Nav() {
     <nav style={{
       position: "sticky", top: 0, zIndex: 100,
       display: "flex", alignItems: "center", justifyContent: "space-between",
-      padding: "1rem 4rem",
+      padding: "0.5rem 4rem",
       background: "rgba(250,250,248,0.95)",
       borderBottom: "1px solid var(--border)",
     }}>
@@ -13,9 +13,9 @@ export default function Nav() {
         <Image
           src="/logo.png"
           alt="TD39 Home logo"
-          width={240}
-          height={80}
-          style={{ objectFit: "contain", height: 80, width: "auto" }}
+          width={168}
+          height={56}
+          style={{ objectFit: "contain", height: 56, width: "auto" }}
           priority
         />
         <span style={{
