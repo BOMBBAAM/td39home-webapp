@@ -9,7 +9,7 @@ export const siteConfig = {
   // ── Contact ──────────────────────────────────
   contact: {
     lineId: "ID: thitisak2544",
-    lineUrl: "https://line.me/ti/p/~@td39home",
+    lineUrl: "https://line.me/ti/p/~thitisak2544",
     phone: "081-621-9269",
     phoneUrl: "tel:0816219269",
     location: "กรุงเทพและปริมณฑล",
