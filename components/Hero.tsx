@@ -8,7 +8,7 @@ const statColor: Record<string, string> = {
 
 export default function Hero() {
   return (
-    <div style={{ padding: "7rem 4rem 6rem", textAlign: "center", background: "var(--bg)", borderBottom: "1px solid var(--border)" }}>
+    <div className="hero-wrap" style={{ padding: "7rem 4rem 6rem", textAlign: "center", background: "var(--bg)", borderBottom: "1px solid var(--border)" }}>
 
       <div className="anim-1" style={{
         display: "inline-flex", alignItems: "center", gap: 6,
@@ -21,7 +21,7 @@ export default function Hero() {
         รับเหมาก่อสร้างครบวงจร
       </div>
 
-      <h1 className="anim-2" style={{
+      <h1 className="anim-2 hero-h1" style={{
         fontFamily: "'IBM Plex Sans Thai', sans-serif",
         fontSize: "3rem", fontWeight: 700, lineHeight: 1.2,
         color: "var(--text-primary)", marginBottom: "1.25rem", letterSpacing: "-0.02em",
@@ -36,8 +36,8 @@ export default function Hero() {
         โปร่งใส ไม่ทิ้งงาน คุมงบได้จริง มีทีมมืออาชีพดูแลทุกขั้นตอน ตั้งแต่เริ่มจนส่งมอบ
       </p>
 
-      <div className="anim-4" style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
-        <a href="#contact" style={{
+      <div className="anim-4 hero-actions" style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
+        <a href="#contact" className="hero-btn" style={{
           background: "var(--text-primary)", color: "white",
           border: "none", padding: "0.85rem 1.75rem",
           fontFamily: "'IBM Plex Sans Thai', sans-serif", fontSize: "0.9rem", fontWeight: 600,
@@ -45,7 +45,7 @@ export default function Hero() {
         }}>
           ขอใบเสนอราคาฟรี
         </a>
-        <a href={siteConfig.contact.lineUrl} target="_blank" rel="noopener noreferrer" style={{
+        <a href={siteConfig.contact.lineUrl} target="_blank" rel="noopener noreferrer" className="hero-btn" style={{
           background: "white", color: "var(--text-primary)",
           border: "1px solid var(--border-dark)", padding: "0.85rem 1.75rem",
           fontFamily: "'IBM Plex Sans Thai', sans-serif", fontSize: "0.9rem", fontWeight: 500,
@@ -55,13 +55,13 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="anim-5" style={{
+      <div className="anim-5 hero-stats" style={{
         display: "flex", gap: 0, marginTop: "4rem",
         border: "1px solid var(--border)", borderRadius: 12, overflow: "hidden",
         background: "white", maxWidth: 600, marginLeft: "auto", marginRight: "auto",
       }}>
         {siteConfig.stats.map((stat, i) => (
-          <div key={i} style={{
+          <div key={i} className="hero-stat-item" style={{
             flex: 1, padding: "1.5rem 2rem", textAlign: "center",
             borderRight: i < siteConfig.stats.length - 1 ? "1px solid var(--border)" : "none",
           }}>

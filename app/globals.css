@@ -66,3 +66,56 @@ body {
 .anim-3 { animation: fadeUp 0.4s ease 0.3s both; }
 .anim-4 { animation: fadeUp 0.4s ease 0.4s both; }
 .anim-5 { animation: fadeUp 0.4s ease 0.5s both; }
+
+/* ════════════════════════════════════════════════
+   RESPONSIVE — Tablet  769px–1024px
+   ════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  nav                { padding: 0.5rem 2rem !important; }
+  .hero-wrap         { padding: 5rem 2rem 4rem !important; }
+  .section-pad       { padding-left: 2rem !important; padding-right: 2rem !important; }
+  .portfolio-pad     { padding-left: 2rem !important; padding-right: 2rem !important; }
+  .portfolio-section { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+  .services-grid     { grid-template-columns: repeat(2, 1fr) !important; }
+  .footer-wrap       { padding: 2rem 2rem !important; }
+}
+
+/* ════════════════════════════════════════════════
+   RESPONSIVE — Mobile  < 768px
+   ════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Nav */
+  nav            { padding: 0.5rem 1.25rem !important; }
+  .nav-links     { display: none !important; }
+
+  /* Hero */
+  .hero-wrap     { padding: 3rem 1.25rem 2.5rem !important; }
+  .hero-h1       { font-size: 1.9rem !important; }
+  .hero-actions  { flex-direction: column !important; align-items: stretch !important; }
+  .hero-btn      { width: 100% !important; text-align: center !important; box-sizing: border-box !important; }
+
+  /* Stats — stack vertically */
+  .hero-stats       { flex-direction: column !important; max-width: 100% !important; }
+  .hero-stat-item   { border-right: none !important; border-bottom: 1px solid var(--border); }
+  .hero-stat-item:last-child { border-bottom: none !important; }
+
+  /* Sections — reduce horizontal padding */
+  .section-pad       { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+  .portfolio-pad     { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+  .portfolio-section { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+
+  /* Grids → 1 column */
+  .services-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .reno-grid     { grid-template-columns: 1fr !important; }
+  .reviews-grid  { grid-template-columns: 1fr !important; }
+  .pricing-grid  { grid-template-columns: 1fr !important; }
+  .why-grid      { grid-template-columns: 1fr !important; }
+
+  /* CTA buttons — full width stacked */
+  .cta-btns { flex-direction: column !important; align-items: stretch !important; }
+  .cta-btn  { width: 100% !important; text-align: center !important; box-sizing: border-box !important; }
+
+  /* Footer — stack vertically */
+  .footer-wrap  { flex-direction: column !important; align-items: flex-start !important; gap: 1rem !important; padding: 1.5rem 1.25rem !important; }
+  .footer-right { text-align: left !important; }
+}

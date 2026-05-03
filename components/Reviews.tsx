@@ -19,7 +19,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section style={{ padding: "5.5rem 4rem", background: "var(--bg-section)" }}>
+    <section className="section-pad" style={{ padding: "5.5rem 4rem", background: "var(--bg-section)" }}>
       <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--accent-green)", marginBottom: "0.75rem" }}>
         รีวิวลูกค้า
       </div>
@@ -27,7 +27,7 @@ export default function Reviews() {
         เสียงจากคนที่ผ่านมาแล้ว
       </h2>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "1rem", marginTop: "3rem" }}>
+      <div className="reviews-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "1rem", marginTop: "3rem" }}>
         {reviews.map((r) => (
           <div key={r.name} style={{ background: "white", border: "1px solid var(--border)", borderRadius: 12, padding: "2rem" }}>
             <div style={{ color: "var(--accent-orange)", fontSize: "0.8rem", marginBottom: "0.75rem", letterSpacing: 2 }}>★★★★★</div>

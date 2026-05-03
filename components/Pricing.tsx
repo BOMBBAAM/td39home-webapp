@@ -30,7 +30,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" style={{ padding: "5.5rem 4rem", background: "var(--bg)" }}>
+    <section id="pricing" className="section-pad" style={{ padding: "5.5rem 4rem", background: "var(--bg)" }}>
       <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--accent-green)", marginBottom: "0.75rem" }}>
         ราคา
       </div>
@@ -51,7 +51,7 @@ export default function Pricing() {
         ขอใบเสนอราคาฟรี ไม่มีค่าใช้จ่าย ไม่มีข้อผูกมัด
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1rem", marginTop: "1rem" }}>
+      <div className="pricing-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1rem", marginTop: "1rem" }}>
         {plans.map((p) => (
           <div key={p.service} className={p.featured ? undefined : "hover-border"} style={{
             background: "white",

@@ -28,10 +28,10 @@ function Placeholder({ alt }: { alt: string }) {
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" style={{ padding: "5.5rem 0", background: "var(--bg)" }}>
+    <section id="portfolio" className="portfolio-section" style={{ padding: "5.5rem 0", background: "var(--bg)" }}>
 
       {/* Section header */}
-      <div style={{ padding: "0 4rem", marginBottom: "3rem" }}>
+      <div className="portfolio-pad" style={{ padding: "0 4rem", marginBottom: "3rem" }}>
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap" }}>
           <div>
             <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--accent-green)", marginBottom: "0.75rem" }}>
@@ -48,15 +48,15 @@ export default function Portfolio() {
       </div>
 
       {/* ① สร้างบ้าน — full-width carousel */}
-      <div style={{ padding: "0 4rem", marginBottom: "1.5rem" }}>
+      <div className="portfolio-pad" style={{ padding: "0 4rem", marginBottom: "1.5rem" }}>
         <SectionLabel text="สร้างบ้าน" />
         <Carousel slides={portfolio.house} label="สร้างบ้าน" />
       </div>
 
       {/* ② รีโนเวท — before / after side by side */}
-      <div style={{ padding: "0 4rem", marginBottom: "1.5rem" }}>
+      <div className="portfolio-pad" style={{ padding: "0 4rem", marginBottom: "1.5rem" }}>
         <SectionLabel text="รีโนเวท / ต่อเติม" />
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+        <div className="reno-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
           {(["before", "after"] as const).map((side) => {
             const item = portfolio.renovate[side];
             return (
@@ -84,7 +84,7 @@ export default function Portfolio() {
       </div>
 
       {/* ③ ตรวจบ้าน — full width */}
-      <div style={{ padding: "0 4rem", marginBottom: "1.5rem" }}>
+      <div className="portfolio-pad" style={{ padding: "0 4rem", marginBottom: "1.5rem" }}>
         <SectionLabel text="ตรวจบ้าน / คอนโด" />
         <div style={{
           width: "100%", aspectRatio: "21/6", position: "relative", borderRadius: 12, overflow: "hidden",
@@ -99,7 +99,7 @@ export default function Portfolio() {
       </div>
 
       {/* ④ ออกแบบ 3D — full-width carousel */}
-      <div style={{ padding: "0 4rem" }}>
+      <div className="portfolio-pad" style={{ padding: "0 4rem" }}>
         <SectionLabel text="ออกแบบ 3D" />
         <Carousel slides={portfolio.design3d} label="ออกแบบ 3D" />
       </div>

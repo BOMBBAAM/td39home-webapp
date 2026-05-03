@@ -46,7 +46,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" style={{ padding: "5.5rem 4rem", background: "var(--bg-section)" }}>
+    <section id="services" className="section-pad" style={{ padding: "5.5rem 4rem", background: "var(--bg-section)" }}>
       <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--accent-green)", marginBottom: "0.75rem" }}>
         บริการของเรา
       </div>
@@ -54,7 +54,7 @@ export default function Services() {
         ทุกอย่างที่บ้านของคุณต้องการ
       </h2>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "1rem", marginTop: "3rem" }}>
+      <div className="services-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "1rem", marginTop: "3rem" }}>
         {services.map((s) => (
           <div key={s.name} className="hover-card" style={{
             background: "white", border: "1px solid var(--border)",

@@ -27,7 +27,7 @@ export default function Nav() {
         </span>
       </a>
 
-      <ul style={{ display: "flex", gap: "2rem", listStyle: "none" }}>
+      <ul className="nav-links" style={{ display: "flex", gap: "2rem", listStyle: "none" }}>
         {[
           { label: "บริการ",  href: "#services" },
           { label: "ผลงาน",  href: "#portfolio" },
